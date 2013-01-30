@@ -37,8 +37,7 @@
         %hr
       = partial "partials/speaker", locals: { speaker: speaker }
 
-
-.mod-connector
+/.mod-connector
   
 %section#location.mod-section.mod-location
   .layout-constrained
@@ -54,7 +53,7 @@
         %p 590 Cheron Rd, Nashville, TN 37115
         %p= link_to "Get Directions", "https://maps.google.com/maps?q=Nossi+College+of+Art,+Cheron+Road,+Nashville,+TN&hl=en&sll=36.18664,-86.785245&sspn=0.773647,1.396637&t=m&z=15", target: "_blank"
       .travel
-        %h3 Visiting Nashville
+        %h4 Visiting Nashville
         %p There’s more to Nashville than country music and southern cuisine, so check out this #{link_to "nifty city guide", "http://www.designspongeonline.com/2009/10/nashville-guide.html", target: "_blank"} created by Design Sponge to plan your free time during the conference! 
 
     %hr
@@ -73,6 +72,19 @@
               Nashville, TN 37215
               %br
               %a{ href: "#", target: "_blank" } Reserve now &rarr;
-  
+              
+/.mod-connector
+
+%section#schedule.mod-section.mod-schedule
+  .layout-constrained
+    %h1 Schedule
+    %hr
+    .day-one
+      %h2 Friday, February 24, 2012 
+      %ul 
+        %li 6:30pm - Welcoming Reception
+        %li 7:30pm - Keynote presentation
+      
+      
 -# Padding during initial development...
 %div{ style: "height: 10em;" }

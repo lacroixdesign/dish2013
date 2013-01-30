@@ -6,20 +6,21 @@ body {
 }
 
 a {
-  @include transition (all, 0.2s);
-}
+  @include transition (all 0.2s ease-in-out);
+  }
 
 p {
   a,
   a:visited,
   a:focus {
-    border-bottom: 1px solid transparent;
+    /* border-bottom: 1px solid transparent; */
     color: white;
     font-style: italic;
   }
 
   a:hover {
-    border-bottom: 1px solid white;
+    color: darken(white, 10%);
+    border-bottom: 1px solid darken(white, 10%);
   }
 }
 
