@@ -27,6 +27,16 @@ module ApplicationHelper
   def icon key
     "<i data-icon=&#x#{h(key)}></i>"
   end
+
+
+  # Check if supplied URL has http:// or https://
+  def add_url_scheme url
+    if url.start_with?("http://") || url.start_with?("https://")
+      url
+    else
+      "http://#{url}"
+    end
+  end
   
 
   # Date: November 5, 2013
