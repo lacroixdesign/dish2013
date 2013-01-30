@@ -4,4 +4,5 @@
   margin: 0 auto;
   border-left: 1px dashed #aaa;
   border-color: lighten(desaturate($blue, 10%), 10%);
+  border: none;
 }
