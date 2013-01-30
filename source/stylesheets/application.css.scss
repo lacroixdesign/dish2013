@@ -4,6 +4,7 @@
 
 // Mixins
 @import "mixins/buttons";
+@import "mixins/sections";
 
 // Base
 @import "base/settings";
@@ -23,7 +24,6 @@
 @import "modules/nav";
 @import "modules/buttons";
 @import "modules/sections";
-@import "modules/connector";
 @import "modules/frames";
 @import "modules/speakers";
 @import "modules/map";

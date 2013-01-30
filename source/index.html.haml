@@ -1,3 +1,4 @@
+-# Nav
 %nav#nav.mod-menu
   %ul
     %li
@@ -18,6 +19,7 @@
         %span Join AIGA
 
 
+-# Intro
 %section#dish.layout-intro
   .layout-constrained
     .mod-logo= image_tag "logo.png"
@@ -25,8 +27,8 @@
       %h2.mod-date February 22nd & 23rd
       %a.btn-primary.large{ href: "#", target: "_blank" } Register Now
 
-.mod-connector
 
+-# Speakers
 %section#speakers.mod-section.mod-speakers
   .layout-constrained
     %h1 Speakers
@@ -37,8 +39,8 @@
         %hr
       = partial "partials/speaker", locals: { speaker: speaker }
 
-/.mod-connector
-  
+
+-# Location  
 %section#location.mod-section.mod-location
   .layout-constrained
     %h1 Location
@@ -72,9 +74,9 @@
               Nashville, TN 37215
               %br
               %a{ href: "#", target: "_blank" } Reserve now &rarr;
-              
-/.mod-connector
 
+
+-# Schedule
 %section#schedule.mod-section.mod-schedule
   .layout-constrained
     %h1 Schedule
@@ -84,7 +86,3 @@
       %ul 
         %li 6:30pm - Welcoming Reception
         %li 7:30pm - Keynote presentation
-      
-      
--# Padding during initial development...
-%div{ style: "height: 10em;" }
