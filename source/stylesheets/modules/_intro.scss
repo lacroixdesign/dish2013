@@ -3,6 +3,16 @@
   margin: 0 auto;
 
   img {
+    display: block;
     width: 100%;
   }
+}
+
+.mod-date {
+  margin-bottom: 0.5em;
+  color: #666666;
+  font-family: $typeface-serif;
+  font-size: 3em;
+  font-style: italic;
+  text-shadow: 0 1px 1px white;
 }

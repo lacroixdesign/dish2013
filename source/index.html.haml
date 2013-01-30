@@ -1,18 +1,31 @@
 %nav#nav.mod-menu
   %ul
-    %li= link_to "Speakers", "#speakers"
-    %li= link_to "Location", "#location"
-    %li= link_to "Schedule", "#schedule"
-    %li= link_to "Join AIGA", "#join-aiga"
+    %li
+      = link_to "#speakers" do
+        %i= icon "e000"
+        %span Speakers
+    %li
+      = link_to "#location" do
+        %i= icon "e002"
+        %span Location
+    %li
+      = link_to "#schedule" do
+        %i= icon "e001"
+        %span Schedule
+    %li
+      = link_to "#join-aiga" do
+        %i= icon "e003"
+        %span Join AIGA
 
 
 %section#dish.layout-intro
   .layout-constrained
     .mod-logo= image_tag "logo.png"
     .layout-dates
+      %h2.mod-date February 22nd & 23rd
       %a.btn-primary.large{ href: "#", target: "_blank" } Register Now
-      %h2 Feb. 22nd & 23rd
 
+.mod-connector
 
 %section#speakers.mod-section.mod-speakers
   .layout-constrained

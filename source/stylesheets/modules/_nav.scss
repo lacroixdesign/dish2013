@@ -27,5 +27,23 @@
   a {
     display: inline-block;
     padding: 0.5em 1em;
+
+    span {
+      display: none;
+    }
+
+    &:hover {
+      background: darken(#fff, 5%);
+    }
+  }
+
+  @include media(480px) {
+    i {
+      display: none;
+    }
+
+    a span {
+      display: inline-block;
+    }
   }
 }
