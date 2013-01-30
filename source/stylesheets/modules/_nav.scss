@@ -1,0 +1,42 @@
+.mod-menu {
+  background: #ddd;
+
+  ul {
+    @include unstyled-list;
+    @include outer-container;
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0;
+  }
+
+  a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+  }
+
+  &.static {
+    visibility: hidden;
+    position: static;
+    background: green;
+    &.active {
+      visibility: visible;
+    }
+  }
+
+  &.fixed {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: purple;
+
+    &.active {
+      display: block;
+    }
+  }
+}

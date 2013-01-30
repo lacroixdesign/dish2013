@@ -1,0 +1,28 @@
+%section#dish.layout-intro
+  .layout-constrained
+    .mod-logo= image_tag "logo.png"
+    .layout-dates
+      %a.btn-primary.large{ href: "#", target: "_blank" } Register Now
+      %h2 Feb. 22nd & 23rd
+
+#nav
+  - %w(static fixed).each do |type|
+    %nav.mod-menu{ class: type, id: "menu-#{type}" }
+      %ul
+        %li= link_to "Speakers", "#speakers"
+        %li= link_to "Location", "#location"
+        %li= link_to "Schedule", "#schedule"
+        %li= link_to "Join AIGA", "#join-aiga"
+
+%section#speakers.mod-speakers
+  .layout-constrained
+    %h1 Speakers
+    %hr
+  
+%section#location.mod-location
+  .layout-constrained
+    %h1 Location
+    %hr
+  
+-# Padding during initial development...
+%div{ style: "height: 1000px;" }

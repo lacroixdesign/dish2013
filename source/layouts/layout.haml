@@ -52,10 +52,10 @@
     
     = javascript_include_tag "responsive"
     
-    -# koko wa Typekit -- replace VVVVVVV with the proper kit code
-    / %script{ type: "text/javascript", src: "//use.typekit.net/VVVVVVV.js" }
-    / :javascript
-    /   try{Typekit.load();}catch(e){}
+    -# koko wa Typekit
+    %script{ type: "text/javascript", src: "//use.typekit.net/oox6lnk.js" }
+    :javascript
+      try{Typekit.load();}catch(e){}
   
   
   
@@ -70,19 +70,8 @@
             %a{ href: "http://browsehappy.com/", target: '_blank' } upgrade your browser or
             %a{ href: "http://www.google.com/chromeframe/?redirect=true", target: '_blank' } activate Google Chrome Frame
             to improve your experience.
-
-
-    %header.header
-      
       
     = yield
-    
-    
-    %footer.footer
-    
-    
-    
-
     
     
     

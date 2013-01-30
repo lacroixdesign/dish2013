@@ -4,6 +4,7 @@
 @import "font-awesome";
 
 // Mixins
+@import "mixins/buttons";
 
 // Base
 @import "base/settings";
@@ -14,10 +15,14 @@
 
 // Layout
 @import "layout/settings";
-@import "layout/header";
-@import "layout/footer";
 @import "layout/containers";
+@import "layout/intro";
 
 // Modules
+@import "modules/intro";
+@import "modules/nav";
+@import "modules/buttons";
+@import "modules/speakers";
+@import "modules/location";
 
 // States

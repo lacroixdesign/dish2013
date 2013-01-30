@@ -1,0 +1,8 @@
+.btn-primary {
+  @include button-flat(#00adf3, #f8f8f8);
+
+  &.large {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}

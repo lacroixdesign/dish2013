@@ -29,6 +29,7 @@ GEM
     ffi (1.3.1)
     fssm (0.2.10)
     haml (3.1.7)
+    highline (1.6.15)
     hike (1.2.1)
     http_parser.rb (0.5.3)
     http_router (0.10.2)
@@ -127,6 +128,7 @@ PLATFORMS
 
 DEPENDENCIES
   boarding_pass
+  highline
   middleman (~> 3.0.11)
   middleman-deploy
   middleman-livereload
