@@ -1,5 +1,6 @@
 // Basic Elements
 body {
+  background: $off-white;
   font-family: $typeface-sans;
   text-shadow: 1px 1px 1px transparent;
 }
@@ -7,23 +8,5 @@ body {
 a {
   @include transition (color, 0.2s);
 }
-
-p, a, h1, h2, h3, h4, h5, label {
-  font-family: inherit;
-}
-
-h1 {}
-
-h2 {}
-
-h3 {}
-
-h4 {}
-
-h5 {}
-
-h6 {}
-
-p {}
 
 hr {}

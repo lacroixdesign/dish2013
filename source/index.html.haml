@@ -1,3 +1,11 @@
+%nav#nav.mod-menu
+  %ul
+    %li= link_to "Speakers", "#speakers"
+    %li= link_to "Location", "#location"
+    %li= link_to "Schedule", "#schedule"
+    %li= link_to "Join AIGA", "#join-aiga"
+
+
 %section#dish.layout-intro
   .layout-constrained
     .mod-logo= image_tag "logo.png"
@@ -5,21 +13,29 @@
       %a.btn-primary.large{ href: "#", target: "_blank" } Register Now
       %h2 Feb. 22nd & 23rd
 
-#nav
-  - %w(static fixed).each do |type|
-    %nav.mod-menu{ class: type, id: "menu-#{type}" }
-      %ul
-        %li= link_to "Speakers", "#speakers"
-        %li= link_to "Location", "#location"
-        %li= link_to "Schedule", "#schedule"
-        %li= link_to "Join AIGA", "#join-aiga"
 
-%section#speakers.mod-speakers
+%section#speakers.mod-section.mod-speakers
   .layout-constrained
     %h1 Speakers
     %hr
+
+    - ["Dana Tanamachi", "Jason Jones", "Sasha Barr", "Mary Kate McDevitt"].each_with_index do |speaker, index|
+      - unless index == 0
+        %hr
+      %article.mod-speaker
+        .mod-speaker-meta
+          .mod-frame.photo= image_tag "speakers/#{speaker.gsub(' ', '')}.jpg"
+          .info
+            %h3.name= speaker
+            %h5.organization LaCroix Design Co.
+            %h5.twitter= link_to "@lacroixdesign", "#", target: "_blank"
+        .mod-speaker-bio
+          %p To Sherlock Holmes she is always THE woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer--excellent for drawing the veil from men's motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
+
+
+.mod-connector
   
-%section#location.mod-location
+%section#location.mod-section.mod-location
   .layout-constrained
     %h1 Location
     %hr

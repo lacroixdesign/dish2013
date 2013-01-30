@@ -1,5 +1,17 @@
 .mod-menu {
-  background: #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background: #fff;
+  background: rgba(255,255,255,0.9);
+  // background: $off-white;
+  // background: rgba(248,248,248,0.9);
+  color: #a2a2a2;
+  text-shadow: 0 1px 1px #fff;
+  font-weight: bold;
+  text-transform: uppercase;
 
   ul {
     @include unstyled-list;
@@ -15,28 +27,5 @@
   a {
     display: inline-block;
     padding: 0.5em 1em;
-    text-transform: uppercase;
-  }
-
-  &.static {
-    visibility: hidden;
-    position: static;
-    background: green;
-    &.active {
-      visibility: visible;
-    }
-  }
-
-  &.fixed {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: purple;
-
-    &.active {
-      display: block;
-    }
   }
 }

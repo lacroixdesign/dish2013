@@ -1,0 +1,42 @@
+// General Section
+.mod-section {
+  padding: 2em 0;
+  color: $off-white;
+  font-family: $typeface-serif;
+}
+
+// Speakers
+.mod-speakers {
+  border-top: 1.25em solid darken($red, 5%);
+  background: $red;
+  text-shadow: 0 -1px 1px darken($red, 15%);
+
+  h1 {
+    color: darken($red, 20%);
+    text-shadow: 0 1px 1px lighten($red, 10%);
+  }
+
+  hr {
+    border-top: 2px solid darken($red, 5%);
+  }
+
+  .mod-frame {
+    border: 2px solid darken($red, 5%);
+  }
+}
+
+// Location
+.mod-location {
+  border-top: 1.25em solid darken($blue, 5%);
+  background: $blue;
+  text-shadow: 0 -1px 1px darken($blue, 15%);
+
+  h1 {
+    color: darken($blue, 20%);
+    text-shadow: 0 1px 1px lighten($blue, 10%);
+  }
+
+  hr {
+    border-top: 2px solid darken($blue, 5%);
+  }
+}
