@@ -12,6 +12,7 @@
 // Speakers
 .mod-speakers {
   border-top: 1.25em solid darken($red, 5%);
+  border-bottom: 1.25em solid darken($red, 5%);
   background: $red;
   text-shadow: 0 -1px 1px darken($red, 15%);
 
@@ -32,6 +33,7 @@
 // Location
 .mod-location {
   border-top: 1.25em solid darken($blue, 5%);
+  border-bottom: 1.25em solid darken($blue, 5%);
   background: $blue;
   text-shadow: 0 -1px 1px darken($blue, 15%);
 
