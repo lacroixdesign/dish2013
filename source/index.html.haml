@@ -52,6 +52,35 @@
   .layout-constrained
     %h1 Location
     %hr
+
+    .mod-frame
+      .mod-map#map-canvas
+
+    .layout-location-meta
+      .venue
+        %h2 Nossi College of Art
+        %p 590 Cheron Rd, Nashville, TN 37115
+        %p= link_to "Get Directions", "https://maps.google.com/maps?q=Nossi+College+of+Art,+Cheron+Road,+Nashville,+TN&hl=en&sll=36.18664,-86.785245&sspn=0.773647,1.396637&t=m&z=15", target: "_blank"
+      .travel
+        %h3 Visiting Nashville
+        %p There’s more to Nashville than country music and southern cuisine, so check out this #{link_to "nifty city guide", "http://www.designspongeonline.com/2009/10/nashville-guide.html", target: "_blank"} created by Design Sponge to plan your free time during the conference! 
+
+    %hr
+
+    .layout-accommodations
+      %h2 Where to Stay:
+      %ul.mod-accommodations
+        - 4.times do
+          %li
+            %h5 Hampton Inn & Suites
+            %p
+              Nashville-Green Hills
+              %br
+              2324 Crestmoor Road
+              %br
+              Nashville, TN 37215
+              %br
+              %a{ href: "#", target: "_blank" } Reserve now &rarr;
   
 -# Padding during initial development...
-%div{ style: "height: 1000px;" }
+%div{ style: "height: 10em;" }

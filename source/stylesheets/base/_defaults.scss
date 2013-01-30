@@ -6,7 +6,25 @@ body {
 }
 
 a {
-  @include transition (color, 0.2s);
+  @include transition (all, 0.2s);
+}
+
+p {
+  a,
+  a:visited,
+  a:focus {
+    border-bottom: 1px solid transparent;
+    color: white;
+    font-style: italic;
+  }
+
+  a:hover {
+    border-bottom: 1px solid white;
+  }
 }
 
 hr {}
+
+address {
+  font-style: normal;
+}
