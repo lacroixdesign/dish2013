@@ -15,12 +15,12 @@
 
 .layout-accommodations {
   .mod-accommodations li {
-    @include breakpoint(min-width 480px max-width ($breakpoint-ipad - 1)){
+    @include media(min-width 480px max-width ($breakpoint-ipad - 1)){
       @include span-columns(3 of 6);
       @include nth-omega(2n);
     }
 
-    @include breakpoint($breakpoint-ipad){
+    @include media($breakpoint-ipad){
       @include span-columns(3 of 12);
       @include nth-omega(4n);
     }
