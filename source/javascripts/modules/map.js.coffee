@@ -92,9 +92,17 @@ mapStyles = [
 class GoogleMap
 
   constructor: (@google, @coordinates, @mapStyles)->
+    # Create LatLng object from coords
     @location = @latLng( coordinates.lat, coordinates.lng )
-    @map = @createMap()
-    @marker(@location).setMap( @map )
+    # Create Map object
+    map = @createMap()
+    # Create Marker object & add to map
+    marker = @createMarker(@location)
+    marker.setMap( map )
+    # Create InfoWindow & add to map
+    infoContent = "<h5>Nossi College of Art</h5>590 Cheron Rd, Nashville, TN 37115"
+    infoWindow = @createInfoWindow(marker, infoContent)
+    infoWindow.open(map, marker)
 
 
   latLng: (lat, lng)=>
@@ -106,17 +114,27 @@ class GoogleMap
     zoom: 15
     mapTypeId: @google.maps.MapTypeId.ROADMAP
     styles: @mapStyles
-    disableDefaultUI: true
+    streetViewControl: false
+    mapTypeControl: false
+    panControl: false
+    zoomControlOptions:
+      style: "SMALL"
+    scrollwheel: false
 
     
   createMap: =>
     new @google.maps.Map( document.getElementById('map-canvas'), @options() )
 
   
-  marker: (location)=>
+  createMarker: (location)=>
     new @google.maps.Marker
       position: location
       animation: @google.maps.Animation.DROP
+
+
+  createInfoWindow: (marker, content)=>
+    new @google.maps.InfoWindow
+      content: content
 
 
 
