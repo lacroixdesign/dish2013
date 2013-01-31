@@ -16,3 +16,9 @@
     @include span-columns(4);
   }
 }
+
+.layout-half-768 {
+  @include media($breakpoint-ipad) {
+    @include span-columns(6);
+  }
+}
