@@ -1,16 +1,22 @@
 ---
 day1:
+  - label: <small><em>Nossi Photography Studio</em></small>
+
   - time: "6:30 pm"
-    title: Dooes
+    title: Doors
+
   - time: "7:30 pm"
     title: Keynote - Dana Tanamachi
 
 day2:
+  - label: <small><em>Nossi Classrooms</em></small>
   - time: "9:00 am"
     title: Portfolio Review Group 1 & Breakfast
 
   - time: "10:00 am"
     title: Portfolio Review Group 2 & Breakfast
+
+  - label: <small><em>Nossi Photography Studio</em></small>
 
   - time: "11:05 am"
     title: Opening Remarks
@@ -21,8 +27,12 @@ day2:
   - time: "12:15 am"
     title: Jason Jones
 
+  - label: <small><em>Nossi Lounge</em></small>
+
   - time: "1:00 pm"
     title: Lunch
+
+  - label: <small><em>Nossi Photography Studio</em></small>
 
   - time: "2:15 pm"
     title: Aaron Johnson & Bradley Elliott
