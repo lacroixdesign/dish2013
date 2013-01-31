@@ -1,0 +1,13 @@
+.layout-day-one {
+  @include breakpoint($breakpoint-desktop){
+    @include span-columns(6);
+  }
+} 
+
+.layout-day-two {
+  @include breakpoint($breakpoint-desktop){
+    @include span-columns(6);
+    @include omega();
+  }
+} 
+      
