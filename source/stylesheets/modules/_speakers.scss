@@ -28,6 +28,7 @@
   .twitter {
     font-weight: normal;
     font-style: italic;
+    color: lighten($red, 35%);
   }
 
   @include media(480px) {

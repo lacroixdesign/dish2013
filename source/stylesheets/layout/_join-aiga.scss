@@ -1,0 +1,37 @@
+.layout-join-aiga-one {
+  @include breakpoint($breakpoint-ipad){
+    @include span-columns(12);
+  }
+} 
+
+.layout-join-aiga-two {
+  @include breakpoint($breakpoint-ipad){
+    @include span-columns(6);
+  }
+} 
+
+.layout-join-aiga-three {
+  @include breakpoint($breakpoint-ipad){
+    @include span-columns(6);
+  }
+} 
+
+.layout-join-aiga-one {
+  @include breakpoint($breakpoint-desktop){
+    @include span-columns(6);
+  }
+} 
+
+.layout-join-aiga-two {
+  @include breakpoint($breakpoint-desktop){
+    @include span-columns(6);
+    @include omega();
+  }
+} 
+
+.layout-join-aiga-three {
+  @include breakpoint($breakpoint-desktop){
+    @include span-columns(6);
+    @include omega();
+  }
+} 
