@@ -67,17 +67,21 @@
     .layout-accommodations
       %h2 Where to Stay:
       %ul.mod-accommodations
-        - 4.times do
+        - data.accommodations.each do |acc|
           %li
-            %h5 Hampton Inn & Suites
+            %h5= acc.name
             %p
-              Nashville-Green Hills
-              %br
-              2324 Crestmoor Road
-              %br
-              Nashville, TN 37215
-              %br
-              %a{ href: "#", target: "_blank" } Reserve now &rarr;
+              - if acc.area
+                = acc.area
+                %br
+              - if acc.address1
+                = acc.address1
+                %br
+              - if acc.address2
+                = acc.address2
+                %br
+              - if acc.url
+                %a{ href: acc.url, target: "_blank" } Reserve now &rarr;
 
 
 -# Schedule
