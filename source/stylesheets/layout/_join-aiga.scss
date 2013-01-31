@@ -1,37 +1,21 @@
-.layout-join-aiga-one {
-  @include breakpoint($breakpoint-ipad){
-    @include span-columns(12);
-  }
-} 
+.layout-join-aiga {
+  @include outer-container;
+  padding: 0 $page-gutter;
 
-.layout-join-aiga-two {
-  @include breakpoint($breakpoint-ipad){
-    @include span-columns(6);
+  @include media($breakpoint-ipad) {
+    .mod-join-aiga-list {
+      @include span-columns(6);
+    }
   }
-} 
 
-.layout-join-aiga-three {
-  @include breakpoint($breakpoint-ipad){
-    @include span-columns(6);
-  }
-} 
+  @include media($breakpoint-desktop) {
+    .mod-join-aiga-overview {
+      @include span-columns(6);
+    }
 
-.layout-join-aiga-one {
-  @include breakpoint($breakpoint-desktop){
-    @include span-columns(6);
+    .mod-join-aiga-list {
+      @include span-columns(6);
+      @include omega();
+    }
   }
-} 
-
-.layout-join-aiga-two {
-  @include breakpoint($breakpoint-desktop){
-    @include span-columns(6);
-    @include omega();
-  }
-} 
-
-.layout-join-aiga-three {
-  @include breakpoint($breakpoint-desktop){
-    @include span-columns(6);
-    @include omega();
-  }
-} 
+}
