@@ -1,6 +1,14 @@
 .layout-intro {
-  padding: 2.5em 0 0;
-  margin-bottom: 10em;
+  padding: 3em 0 0;
+  margin-bottom: 7em;
+
+  @include media(480px) {
+    padding: 4.75em 0 0;
+  }
+
+  @include media($breakpoint-ipad) {
+    margin-bottom: 10em;
+  }
 }
 
 .layout-dates {

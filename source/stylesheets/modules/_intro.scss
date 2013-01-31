@@ -1,5 +1,5 @@
 .mod-logo {
-  max-width: 250px;
+  max-width: 190px;
   margin: 0 auto;
 
   img {
@@ -7,8 +7,12 @@
     width: 100%;
   }
 
+  @include media($breakpoint-ipad) {
+    max-width: 300px;
+  }
+
   @include media($breakpoint-desktop) {
-    max-width: 450px;
+    max-width: 400px;
   }
 }
 
