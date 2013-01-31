@@ -8,8 +8,8 @@
   background: #fff;
   background: rgba(255,255,255,0.9);
   color: #888;
-  text-shadow: 0 1px 1px #fff;
   font-weight: bold;
+  text-shadow: 0 1px 1px #fff;
   text-transform: uppercase;
 
   ul {
@@ -36,7 +36,9 @@
     }
   }
 
-  @include media(480px) {
+  @include media($breakpoint-ipad) {
+    font-size: 80%;
+
     i {
       display: none;
     }
