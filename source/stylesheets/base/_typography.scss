@@ -3,7 +3,7 @@ $typeface-sans:  "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-se
 $typeface-serif: "jubilat", Georgia, Cambria, "Times New Roman", Times, serif;
 
 body {
-  @include media($breakpoint-ipad) {
+  @include media($breakpoint-desktop) {
     font-size: 125%;
   }
 }

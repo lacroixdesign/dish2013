@@ -37,8 +37,6 @@
   }
 
   @include media($breakpoint-ipad) {
-    font-size: 80%;
-
     i {
       display: none;
     }
@@ -46,5 +44,9 @@
     a span {
       display: inline-block;
     }
+  }
+
+  @include media($breakpoint-desktop) {
+    font-size: 80%;
   }
 }
