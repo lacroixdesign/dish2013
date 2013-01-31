@@ -1,5 +1,8 @@
 #footer {
-  padding: 2.5em 0 0;
-  margin-bottom: 10em;
+  margin: 1.5em 0 10em;
   text-align: center;
+
+  [class*="btn"] {
+    margin: 1em 0 0.5em;
+  }
 }

@@ -5,30 +5,6 @@
   padding: 0.5em 1em;
   border: none;
   border-radius: $radius;
-  color: $text;
-  background: $bg;
-  font-family: $typeface-sans;
-  text-decoration: none;
-  text-shadow: 0 -1px 1px darken($bg, 15%);
-
-  &:visited,
-  &:active {
-    color: $text;
-  }
-
-  &:hover {
-    background: darken($bg, 5%);
-    color: $text;
-  }
-}
-
-@mixin simple-raised($bg, $text, $radius:2px, $shadow:15%, $box:0.4) {
-  position: relative;
-  top: 0;
-  display: inline-block;
-  padding: 0.5em 1em;
-  border: none;
-  border-radius: $radius;
   @include box-shadow(0 4px darken($bg, $shadow),
                       0 4px 3px 1px rgba(0,0,0,$box));
   color: $text;
@@ -45,11 +21,13 @@
     top: -2px;
     @include box-shadow(0 6px darken($bg, $shadow),
                         0 6px 4px 1px rgba(0,0,0,$box));
+    color: $text;
   }
 
   &:active {
     top: 3px;
     @include box-shadow(0 1px darken($bg, $shadow),
                         0 1px 1px 1px rgba(0,0,0,$box/2));
+    color: $text;
   }
 }
