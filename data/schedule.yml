@@ -1,0 +1,41 @@
+---
+day1:
+  - time: "6:30 pm"
+    title: Welcoming Reception
+
+  - time: "7:30 pm"
+    title: Keynote presentation
+
+day2:
+  - time: "9:00 am"
+    title: Portfolio Review Group 1 & Breakfast
+
+  - time: "10:00 am"
+    title: Portfolio Review Group 2 & Breakfast
+
+  - time: "11:00 am"
+    title: Opening Remarks
+
+  - time: "11:15 am"
+    title: Kathryn Harmon
+
+  - time: "12:15 am"
+    title: Kyle Jones
+
+  - time: "1:00 pm"
+    title: Lunch
+
+  - time: "2:15 pm"
+    title: Daniel Dejean
+
+  - time: "3:00 pm"
+    title: Brent Warren
+
+  - time: "3:45 pm"
+    title: Q & A Panel w/ Mikey, Kyle & Brett
+
+  - time: "4:30 pm"
+    title: Closing Remarks and Raffle
+
+  - time: "5:30 pm"
+    title: All Ages After Party venue TBA

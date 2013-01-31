@@ -92,28 +92,29 @@
   .layout-constrained
     %h1 Schedule
     %hr
-    .layout-day-one
-      %h2 Friday, February 22
-      %ul 
-        %li 6:30 pm - Welcoming Reception
-        %li 7:30 pm - Keynote presentation
-    .layout-day-two
-      %h2 Saturday, February 23
-      %ul
-        %li 9:00 am - Portfolio Review Group 1 &amp; Breakfast
-        %li 10:00 am - Portfolio Review Group 2 &amp; Breakfast
-        %li 11:00 am - Opening Remarks
-        %li 11:15 am - Kathryn Harmon 
-        %li 12:15 am - Kyle Jones
-        %li 1:00 pm - Lunch
-        %li 2:15 pm - Daniel Dejean
-        %li 3:00 pm - Brent Warren
-        %li 3:45 pm - Q &A Panel w/ Mikey, Kyle & Brett
-        %li 4:30 pm - Closing Remarks and Raffle
-        %li 5:30 pm - All Ages After Party venue TBA
+
+    - if data.schedule.day1
+      .layout-half-768
+        %h2 Friday, February 22
+        %table.mod-events
+          %tbody
+            - data.schedule.day1.each do |e|
+              %tr
+                %td.time= e.time
+                %td.title= e.title
+
+    - if data.schedule.day2
+      .layout-half-768
+        %h2 Saturday, February 23
+        %table.mod-events
+          %tbody
+            - data.schedule.day2.each do |e|
+              %tr
+                %td.time= e.time
+                %td.title= e.title
 
 
--# Schedule
+-# Portfolio Reviews
 %section#porfolio-reviews.mod-section.mod-portfolio-reviews
   .layout-constrained
     %h1 Portfolio Reviews

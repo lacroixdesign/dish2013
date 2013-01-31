@@ -1,10 +1,17 @@
-// Schedule Container
-.mod-schedule {
-  h2 {
-    margin: 0;
+// Event Schedule
+.mod-events {
+  td {
+    padding: 0.25em;
+    border: none;
   }
-  ul {
-    margin: 0;
-    list-style: none;
+
+  .time {
+    padding-left: 0;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .title {
+    padding-right: 0;
   }
 }
