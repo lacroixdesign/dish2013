@@ -1,6 +1,7 @@
 .mod-logo {
   max-width: 190px;
   margin: 0 auto;
+  @include transition (all 0.4s ease-in-out);
 
   img {
     display: block;
@@ -24,6 +25,7 @@
   font-size: 1em;
   margin:1em 0;
   text-shadow: 0 1px 1px white;
+  @include transition (all 0.4s ease-in-out);
 
   @include media(480px) {
     font-size: 1.5em;
