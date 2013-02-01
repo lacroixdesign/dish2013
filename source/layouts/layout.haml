@@ -87,12 +87,11 @@
     -# koko wa javascript
     = javascript_include_tag "application"
     
-    
     - if development?
-      -# koko wa Google Analytics -- replace VVVVVVVV-V with the proper code
+      -# koko wa Google Analytics
       :javascript
         var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-VVVVVVVV-V']);
+        _gaq.push(['_setAccount', 'UA-11518275-4']);
         _gaq.push(['_trackPageview']);
         
         (function() {
@@ -101,6 +100,19 @@
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
 
+    -# koko wa Gauges Tracking
+    :javascript
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '510c17eaf5a1f50c3900000c');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
 
 
     
