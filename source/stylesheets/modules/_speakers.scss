@@ -35,10 +35,10 @@
     text-align: left;
 
     .photo {
-      @include span-columns(4 of 8);
+      @include span-columns(2 of 8);
     }
     .info {
-      @include span-columns(4 of 8);
+      @include span-columns(6 of 8);
     }
   }
 
