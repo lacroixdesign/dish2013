@@ -1,47 +1,50 @@
 ---
-day1:
-  - label: <small><em>Nossi Photography Studio</em></small>
+- title: Friday, Feb. 22
+  events:
+    - label: Nossi Photography Studio
 
-  - time: "6:30 pm"
-    title: Doors
+    - time: "6:30 pm"
+      title: Doors
 
-  - time: "7:30 pm"
-    title: Keynote - Dana Tanamachi
+    - time: "7:30 pm"
+      title: Keynote - Dana Tanamachi
 
-day2:
-  - label: <small><em>Nossi Classrooms</em></small>
-  - time: "9:00 am"
-    title: Portfolio Review Group 1 & Breakfast
+- title: Saturday, Feb. 23
+  events:
+    - label: Nossi Classrooms
 
-  - time: "10:00 am"
-    title: Portfolio Review Group 2 & Breakfast
+    - time: "9:00 am"
+      title: Portfolio Review Group 1 & Breakfast
 
-  - label: <small><em>Nossi Photography Studio</em></small>
+    - time: "10:00 am"
+      title: Portfolio Review Group 2 & Breakfast
 
-  - time: "11:05 am"
-    title: Opening Remarks
+    - label: Nossi Photography Studio
 
-  - time: "11:15 am"
-    title: Mary Kate McDevitt
+    - time: "11:05 am"
+      title: Opening Remarks
 
-  - time: "12:15 am"
-    title: Jason Jones
+    - time: "11:15 am"
+      title: Mary Kate McDevitt
 
-  - label: <small><em>Nossi Lounge</em></small>
+    - time: "12:15 am"
+      title: Jason Jones
 
-  - time: "1:00 pm"
-    title: Lunch
+    - label: Nossi Lounge
 
-  - label: <small><em>Nossi Photography Studio</em></small>
+    - time: "1:00 pm"
+      title: Lunch
 
-  - time: "2:15 pm"
-    title: Aaron Johnson & Bradley Elliott
+    - label: Nossi Photography Studio
 
-  - time: "3:15 pm"
-    title: Sasha Barr
+    - time: "2:15 pm"
+      title: Aaron Johnson & Bradley Elliott
 
-  - time: "4:15 pm"
-    title: Q&A
+    - time: "3:15 pm"
+      title: Sasha Barr
 
-  - time: "4:30 pm"
-    title: Closing Remarks
+    - time: "4:15 pm"
+      title: Q&A
+
+    - time: "4:30 pm"
+      title: Closing Remarks

@@ -98,25 +98,20 @@
     %h1 Schedule
     %hr
 
-    - if data.schedule.day1
-      .layout-half-768
-        %h2 Friday, February 22
-        %table.mod-events
-          %tbody
-            - data.schedule.day1.each do |e|
-              %tr
-                %td.time= e.time
-                %td.title= e.title
-
-    - if data.schedule.day2
-      .layout-half-768
-        %h2 Saturday, February 23
-        %table.mod-events
-          %tbody
-            - data.schedule.day2.each do |e|
-              %tr
-                %td.time= e.time
-                %td.title= e.title
+    - if data.schedule
+      - data.schedule.each do |day|
+        .layout-half-768
+          %h2= day.title
+          %table.mod-events
+            %tbody
+              - day.events.each do |e|
+                - if e.label
+                  %tr
+                    %td.label{ colspan: "2" }= e.label
+                - else
+                  %tr
+                    %td.time= e.time
+                    %td.title= e.title
 
 
 -# Portfolio Reviews
