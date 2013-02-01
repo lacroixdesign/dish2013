@@ -3,7 +3,6 @@ $typeface-sans:  "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-se
 $typeface-serif: "jubilat", Georgia, Cambria, "Times New Roman", Times, serif;
 $typeface-script: "corner-store", Georgia, Cambria, "Times New Roman", Times, serif;
 
-
 body {
   @include media($breakpoint-desktop) {
     font-size: 125%;
@@ -20,18 +19,11 @@ h1 {
   text-transform: uppercase;
 }
 
-h2 {
-}
-
-h3 {}
-
 h4 {
   margin-top: 0.5em;
   font-family: $typeface-sans;
   text-transform: uppercase;
 }
-
-h5 {}
 
 h6 {
   font-family: $typeface-sans;
@@ -43,5 +35,3 @@ p {
   line-height: 1.25;
   margin-bottom: .75em;
 }
-
-

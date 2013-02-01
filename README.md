@@ -1,47 +1,13 @@
-# LaCroix Design Co. Middleman Template
+# DISH Student Conference 2013
 
-A template for [middleman](http://middlemanapp.com/).
+Website for DISH Student Conference 2013 in Nashville, TN  
+[dishconference.com](http://dishconference.com)
 
-## Installation
+### Contribute
 
-Install `middleman`
+Ensure [Ruby 1.9](http://www.ruby-lang.org) & [Bundler](http://gembundler.com) are installed.
 
-    gem install middleman
-
-Clone this repo into your `~/.middleman` folder:
-
-    git clone https://bitbucket.org/iamlacroix/template-middleman ~/.middleman/lacroixdesign
-
-## Usage
-
-#### Create a new project
-
-    middleman init PROJECT_NAME -T=lacroixdesign
-
-Change to the project directory and run `bundle install`.
-
-#### Run the development server
-
+    git clone git://github.com/lacroixdesign/dish2013.git
+    cd dish2013
+    bundle
     rake server
-
-#### Build + clean
-
-    rake build
-
-Builds the static version for production and removes files that are no longer needed.
-
-#### Set a domain name for Github Pages
-
-    rake domain:set
-
-See [Setting up a custom domain with Pages](https://help.github.com/articles/setting-up-a-custom-domain-with-pages) for DNS instructions.
-
-#### View the currently set domain name, if any. Prompts to set one if missing
-
-    rake domain
-
-#### Build & deploy to Github Pages
-
-    rake deploy
-
-Requires a Github repo to be set for `origin`. This will build + clean, then deploy to the `gh-pages` branch of the Github repo. Deployed site will be availale after about 10 minutes.

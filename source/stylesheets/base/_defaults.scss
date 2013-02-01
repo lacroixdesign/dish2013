@@ -13,7 +13,6 @@ p {
   a,
   a:visited,
   a:focus {
-    // border-bottom: 1px solid transparent;
     color: white;
     font-style: italic;
   }
@@ -24,8 +23,6 @@ p {
   }
 }
 
-hr {}
-
 address {
   font-style: normal;
 }
@@ -33,6 +30,7 @@ address {
 ul {
   margin-top: 0;
 }
-li{
+
+li {
   margin: 0;
 }
