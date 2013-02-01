@@ -2,29 +2,32 @@
 %nav#nav.mod-menu
   %ul
     %li
+      = link_to "#intro" do
+        = icon "e006"
+    %li
       = link_to "#speakers" do
-        %i= icon "e000"
-        %span Speakers
+        %span.icon= icon "e000"
+        %span.text Speakers
     %li
       = link_to "#location" do
-        %i= icon "e002"
-        %span Location
+        %span.icon= icon "e002"
+        %span.text Location
     %li
       = link_to "#schedule" do
-        %i= icon "e001"
-        %span Schedule
+        %span.icon= icon "e001"
+        %span.text Schedule
     %li
       = link_to "#portfolio-reviews" do
-        %i= icon "e004"
-        %span Portfolio Reviews       
+        %span.icon= icon "e004"
+        %span.text Portfolio Reviews       
     %li
       = link_to "#join-aiga" do
-        %i= icon "e003"
-        %span Join AIGA
+        %span.icon= icon "e003"
+        %span.text Join AIGA
 
 
 -# Intro
-%section#dish.layout-intro
+%section#intro.layout-intro
   .layout-constrained
     .mod-logo= image_tag "logo.png"
     .layout-dates

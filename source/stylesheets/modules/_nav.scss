@@ -27,21 +27,21 @@
     display: inline-block;
     padding: 0.5em 1em;
 
-    span {
-      display: none;
-    }
-
     &:hover {
       background: darken(#fff, 5%);
     }
   }
 
+  .text {
+    display: none;
+  }
+
   @include media($breakpoint-ipad) {
-    i {
+    .icon {
       display: none;
     }
 
-    a span {
+    .text {
       display: inline-block;
     }
   }
